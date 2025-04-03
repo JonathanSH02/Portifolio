@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Portifólio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="inicio">
+            <div class="texto">
+                <h1>Desenvolvedor Back-End</h1>
+                <p>Oi, meu nome e Jonathan Seiti Hayasshi (Jow), Desenvolvedor Back-End com especialidade em HTML, CSS, JS, PHP, MySQL e Laravel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur, reiciendis fugit vero blanditiis excepturi delectus. Voluptatum explicabo dolores, vel asperiores nobis porro doloremque amet, tenetur quibusdam suscipit rerum veniam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur rerum sit unde sed earum deleniti incidunt voluptas odit voluptate doloribus eos labore a quaerat expedita nesciunt, minima nisi, assumenda blanditiis.</p>
+            </div>
+            <img src="imagens/Burn.jpg" alt="Imagen para perfil">
+        </section>
+            <h2>Projetos</h2>
+            <div class="container">
+                <button class="btn btn-left" onclick="scrollLeft()">&#9665;</button>
+                <div class="scroll-container" id="scrollContainer">
+                    <div class="image-container">
+                        <div class="image" style="background-image: url();"></div>
+                        <div class="tooltip">Natureza - Uma bela paisagem natural</div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image" style="background-image: url();"></div>
+                        <div class="tooltip">Cidade - Um ambiente urbano vibrante</div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image" style="background-image: url();"></div>
+                        <div class="tooltip">Oceano - O vasto e belo mar</div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image" style="background-image: url();"></div>
+                        <div class="tooltip">Oceano - O vasto e belo mar</div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image" style="background-image: url();"></div>
+                        <div class="tooltip">Oceano - O vasto e belo mar</div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image" style="background-image: url();"></div>
+                        <div class="tooltip">Oceano - O vasto e belo mar</div>
+                    </div>
+                </div>
+                <button class="btn btn-right" onclick="scrollRight()">&#9655;</button>
+            </div>
+    </main>
+    <footer>
+        <h2>Contato</h2>
+        <a href="">asdasd</a>
+        <a href="">adasdsa</a>
+        <a href="">asdsasd</a>
+    </footer>
+    <script>
+        function scrollLeft() {
+            document.getElementById('scrollContainer').scrollBy({ left: -320, behavior: 'smooth' });
+        }
+
+        function scrollRight() {
+            document.getElementById('scrollContainer').scrollBy({ left: 320, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
